@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--eds-button-demo--aditiagarwal28.aem.page/
+- Live: https://main--eds-button-demo--aditiagarwal28.aem.live/
 
 ## Documentation
 
