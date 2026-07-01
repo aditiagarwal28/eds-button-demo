@@ -74,7 +74,21 @@ The CTA section on the homepage uses the section model's built-in `style: highli
 option (`models/_section.json`) to get a visually distinct call-to-action band, instead of
 introducing a bespoke class or block just to change a background color.
 
-## 8. Editorial content stays outcome-focused, not template-y
+## 8. When to reach for a block vs. a core component
+
+The homepage's "One Action, Two Ways to Build It" section puts this side by side on purpose:
+a plain core **Button** component (`core/franklin/components/button`) does a simple navigation
+link with zero authored JS/CSS, while the **Action Button** block (`blocks/action-button/`)
+wraps the same visual affordance with client-side state — a loading label, a disabled state
+during the async action, and a temporary "Copied!" confirmation
+(`blocks/action-button/action-button.js`).
+
+The deciding question is always "does this click need to *do* something in the page, or just
+*go* somewhere?" Navigation stays a core Button; in-page behavior (copy-to-clipboard,
+add-to-cart, anything stateful) justifies the extra block. Reaching for a block by default —
+even for a plain link — adds JS/CSS weight and an authoring model with no real benefit.
+
+## 9. Editorial content stays outcome-focused, not template-y
 
 Copy for services/programs is written to reflect the actual organization instead of using
 boilerplate SaaS placeholder text — this matters for a client demo because prospective
