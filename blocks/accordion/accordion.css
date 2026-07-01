@@ -1,0 +1,27 @@
+.accordion .accordion-item {
+  border-bottom: 1px solid #dadada;
+}
+
+.accordion .accordion-item-label {
+  padding: 16px 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion .accordion-item-label::marker {
+  color: var(--link-color);
+}
+
+.accordion .accordion-item-body {
+  padding: 0 8px 16px;
+}
+
+@media (width >= 600px) {
+  .accordion .accordion-item-label {
+    padding: 20px 12px;
+  }
+
+  .accordion .accordion-item-body {
+    padding: 0 12px 20px;
+  }
+}

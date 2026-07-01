@@ -51,7 +51,8 @@
         "cards",
         "columns",
         "fragment",
-        "action-button"
+        "action-button",
+        "accordion"
       ]
     }
   ]
