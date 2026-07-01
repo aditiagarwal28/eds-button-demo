@@ -16,6 +16,13 @@
   color: var(--background-color);
 }
 
+.hero p {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--background-color);
+}
+
 .hero picture {
   position: absolute;
   z-index: -1;
@@ -34,4 +41,16 @@
   .hero {
     padding: 40px 32px;
   }
+}
+
+/* lets a button block sit inside the hero banner instead of below it */
+.hero-container {
+  position: relative;
+}
+
+.hero-container .action-button-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
 }

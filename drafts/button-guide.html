@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="script-src 'nonce-aem' 'strict-dynamic' 'unsafe-inline' http: https:; base-uri 'self'; object-src 'none';"
+    move-to-http-header="true"
+  >
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script nonce="aem" src="/scripts/aem.js" type="module"></script>
+  <script nonce="aem" src="/scripts/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/styles/styles.css"/>
+  <title>Choosing the Right Button</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <div class="section">
+      <div>
+        <div class="hero">
+          <picture>
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80" alt="Close up of a hand pressing a button" loading="eager">
+          </picture>
+          <h1>Choosing the Right Button</h1>
+          <p>Every click is either a trip to another page or an action on this one. Pick your button accordingly.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div>
+        <div class="columns">
+          <div>
+            <div>
+              <h2>Use the OOTB Button</h2>
+              <p>A formatted link, no block needed. Available to every author in the rich text editor.</p>
+              <ul>
+                <li>The click should navigate to another page, anchor, or file</li>
+                <li>No client-side logic or state is required</li>
+                <li>Speed of authoring matters more than customization</li>
+              </ul>
+              <p><em>Examples: "View Size Guide", "Read Reviews", "Download Spec Sheet"</em></p>
+            </div>
+            <div>
+              <h2>Use a Custom Button Block</h2>
+              <p>A dedicated block with its own model and JavaScript. Built once by developers, reused by every author.</p>
+              <ul>
+                <li>The click should trigger behavior on the current page</li>
+                <li>It needs state: loading, success, disabled</li>
+                <li>It calls an API, fires analytics, or updates the DOM</li>
+              </ul>
+              <p><em>Examples: "Add to Cart", "Copy Share Link", "Open Filters"</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div>
+        <h2>See it in a real page</h2>
+        <p>The Trailhead Runner product page below uses both: OOTB buttons to navigate to the size guide and reviews, and a custom Action Button block to add the shoe to a cart and copy a share link.</p>
+        <p><strong><a href="/drafts/button-demo" title="View the live demo">View the Live Demo</a></strong></p>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>

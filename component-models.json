@@ -142,6 +142,50 @@
     ]
   },
   {
+    "id": "action-button",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Label",
+        "value": "Add to Cart"
+      },
+      {
+        "component": "select",
+        "name": "action",
+        "label": "Action",
+        "value": "add-to-cart",
+        "options": [
+          {
+            "name": "Add to Cart",
+            "value": "add-to-cart"
+          },
+          {
+            "name": "Copy Link",
+            "value": "copy-link"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "style",
+        "label": "Style",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
